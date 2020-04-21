@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Pierwszy projekt springowy</title>
+    <meta charset="UTF-8" />
+</head>
+<body>
+
+<form action="/hello" method="post">
+    Imię: <input type="text" name="imie" />
+    Wiek: <input type="number" name="wiek" />
+    <input type="submit" value="Wyślij" />
+</form>
+
+
+<h1>Pierwsze zadanie</h1>
+<form action="/add1" method="post">
+    Pierwsza Liczba: <input type="number" name="a" />
+    Druga Liczba: <input type="number" name="b" />
+    <input type="submit" value="Dodaj" />
+</form>
+
+<h1>Drugie zadanie</h1>
+
+<form action="/add2" method="post">
+    Pierwsza Liczba: <input type="number" name="a" />
+    Druga Liczba: <input type="number" name="b" />
+    <select name="wybor">
+        <option value="+"> Dodaj</option>
+        <option value="-"> Odejmij</option>
+        <option value="*"> Wymnóż </option>
+    </select>
+    <input type="submit" value="Oblicz" />
+</form>
+
+
+<h1>Trzecie zadanie</h1>
+<form action="/add3" method="post">
+    Pierwsza Liczba: <input type="number" name="a" />
+    Druga Liczba: <input type="number" name="b" />
+        <select name="wybor">
+            <option value="+"> Dodaj</option>
+            <option value="-"> Odejmij</option>
+            <option value="*"> Wymnóż </option>
+        </select>
+    <input type="submit" value="Oblicz to" />
+</form>
+
+</body>
+</html>
