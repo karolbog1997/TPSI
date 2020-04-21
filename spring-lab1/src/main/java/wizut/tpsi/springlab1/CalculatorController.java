@@ -37,30 +37,20 @@ public class CalculatorController {
     @RequestMapping("/add3")
     public String add3(Model model, CalculatorForm add1) {
 
-        model.addAttribute("a", add1.get_a());
-        model.addAttribute("b", add1.get_b());
-        model.addAttribute("wybor", add1.get_Wybor());
-
-        model.addAttribute("result", "blad" );
-
-            /*
             model.addAttribute("add1", add1);
 
-            if(add1.get_Wybor().equals("+")) {
-
-                //model.addAttribute("result", add1.get_a() + add1.get_b());
+            if(add1.getWybor().equals("+")) {
+                model.addAttribute("result", add1.getA() + add1.getB());
             }
-            else if(add1.get_Wybor().equals("-")) {
-                model.addAttribute("result", add1.get_a() - add1.get_b());
+            else if(add1.getWybor().equals("-")) {
+                model.addAttribute("result", add1.getA() - add1.getB());
             }
-            else if(add1.get_Wybor().equals("*")) {
-                model.addAttribute("result", add1.get_a() * add1.get_b());
+            else if(add1.getWybor().equals("*")) {
+                model.addAttribute("result", add1.getA() * add1.getB());
             }
-
-         */
-
+            else {
+                model.addAttribute("result", "blad");
+            }
             return "add3";
     }
-
-
 }

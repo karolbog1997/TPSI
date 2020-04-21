@@ -7,21 +7,29 @@ public class CalculatorForm {
     private Integer b;
     private String wybor;
 
-    public Integer get_a() {
+
+
+    public Integer getA() {
         return a;
     }
-    public void set_a(Integer a) {
+
+    public void setA(Integer a) {
         this.a = a;
     }
 
-
-    public String get_Wybor() { return wybor; }
-    public void set_Wybor(String wybor) {
-        this.wybor = wybor;
+    public Integer getB() {
+        return b;
     }
 
+    public void setB(Integer b) {
+        this.b = b;
+    }
 
-    public Integer get_b() { return b; }
-    public void set_b(Integer b) { this.b = b; }
+    public String getWybor() {
+        return wybor;
+    }
 
+    public void setWybor(String wybor) {
+        this.wybor = wybor;
+    }
 }
